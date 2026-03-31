@@ -464,6 +464,7 @@ nav ul li:hover {
 @media (max-width: 900px) {
     #about {
         margin: var(--secondary-horizontal-margin);
+        min-height: auto;
     }
     
     #about .about-container {
@@ -550,4 +551,43 @@ nav ul li:hover {
 .project-grid-box .project-grid-box-desc {
     font-family: var(--font-family-others);
     font-weight: 300;
+}
+
+@media (max-width: 900px){
+    #projects {
+        display: flex;
+        flex-direction: column;
+        margin: var(--secondary-horizontal-margin);
+        margin-top: 50px;
+    }
+
+    .projects-grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid: 2px;
+    }
+    .project-grid-box {
+        height: 200px;
+        width: auto;
+    }
+    .project-grid-box .project-grid-box-title {
+        font-size: 1rem;
+        font-family: var(--font-family-title);
+    }
+
+    .project-grid-box .project-grid-box-desc {
+        font-family: var(--font-family-others);
+        font-weight: 300;
+        font-size: 0.7rem;
+    }
+    .project-grid-box .fa-solid {
+        font-size: 2rem;
+        color: var(--main-color);
+    }
+
+    .project-grid-box .fa-regular {
+        font-size: 2rem;
+        color: var(--main-color);
+    }
+
 }
