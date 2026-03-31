@@ -21,6 +21,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--primary-bg-color);
     color: var(--text-color);
@@ -30,11 +34,17 @@ body {
 /* Nav bar section */
 
 nav {
+    position: sticky;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     font-family: var(--font-family-others);
     width: 100%;
     font-size: 2rem;
+    background-color: #32343780;
+    backdrop-filter: blur(5px);
+    z-index: 99999999;
 }
 
 nav ul {
@@ -46,6 +56,11 @@ nav ul li {
     list-style: None;
     padding: 30px 0px;
     transition: all 1s;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 nav ul li:hover {

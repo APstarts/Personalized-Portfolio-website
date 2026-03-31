@@ -26,3 +26,24 @@ function typeWriterEffect() {
 };
 
 window.addEventListener("load", typeWriterEffect);
+
+// navigations
+const navLinks = document.querySelectorAll(".nav-link");
+
+//Add click event listener to each link
+navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault;
+
+        //Get the target section's ID from the href attribute
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        if(targetSection){
+            targetSection.scrollIntoView({
+                behavior: 'smooth',
+                block:'start'
+            })
+        }
+    })
+})
