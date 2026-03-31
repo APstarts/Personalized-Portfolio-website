@@ -474,7 +474,7 @@ nav ul li:hover {
 
     #about .about-container-2 .grid-container {
         display: grid; /* Stay as grid */
-        grid-template-columns: 1fr; /* Single column that fills width */
+        grid-template-columns: repeat(2, 1fr); /* Single column that fills width */
         gap: 15px;
         width: 100%; /* Ensure container spans the screen */
     }
