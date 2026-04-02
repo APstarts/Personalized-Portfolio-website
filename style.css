@@ -553,6 +553,15 @@ nav ul li:hover {
     transition: all 1s;
 }
 
+.project-grid-box a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.project-grid-box a:hover {
+    text-decoration: underline;
+}
+
 .projects-grid-container .project-grid-box:hover {
     box-shadow: 0px 0px 50px var(--main-color);
     transform: scale(1.05);
