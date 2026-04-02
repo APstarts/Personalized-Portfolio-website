@@ -121,11 +121,17 @@ nav ul li:hover {
     flex-direction: column;
     gap:5px;
     height: 200px;
-    width: 200px;
+    width: 300px;
     justify-content: center;
     align-items: center;
     border: 1px solid var(--main-color);
     border-radius: 10px;
+    padding: 5px;
+}
+
+.contact-card a {
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 .contact-card .fa {
@@ -142,7 +148,7 @@ nav ul li:hover {
     }
     .contact-card {
         height: 150px;
-        width: 150px
+        width: 210px
     }
 }
 
