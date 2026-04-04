@@ -34,17 +34,20 @@ body {
 /* Nav bar section */
 
 nav {
-    position: sticky;
-    top: 0;
-    left: 0;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     font-family: var(--font-family-others);
-    width: 100%;
-    font-size: 2rem;
-    background-color: #32343780;
+    width: fit-content;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(5px);
     z-index: 99999999;
+    padding: 0px 50px;
+    border-radius: 30px;
 }
 
 nav ul {
@@ -72,6 +75,7 @@ nav ul li:hover {
 @media (max-width: 900px){
     nav {
         font-size: 1rem;
+        bottom: 20px;
     }
 }
 
@@ -127,6 +131,12 @@ nav ul li:hover {
     border: 1px solid var(--main-color);
     border-radius: 10px;
     padding: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 50px var(--main-color);
 }
 
 .contact-card a {
@@ -163,6 +173,7 @@ nav ul li:hover {
 
 #hero {
     margin: var(--primary-horinzontal-margin);
+    margin-top: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -363,6 +374,7 @@ nav ul li:hover {
         align-items: center;
         gap:2px;
         width: auto;
+        margin-top: 20px;
     }
 
     #hero .hero-sub-container-1 {
@@ -527,7 +539,7 @@ nav ul li:hover {
 /* Projects section */
 #projects {
     margin: var(--primary-horinzontal-margin);
-    min-height: 100vh;
+    min-height: 10vh;
     margin-top: 4rem;
 }
 
@@ -606,6 +618,7 @@ nav ul li:hover {
         flex-direction: column;
         margin: var(--secondary-horizontal-margin);
         margin-top: 50px;
+        min-height: 60vh;
     }
 
     .projects-grid-container {
@@ -637,4 +650,63 @@ nav ul li:hover {
         color: var(--main-color);
     }
 
+}
+
+/* contact section */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin: var(--primary-horinzontal-margin);
+    min-height: 50vh;
+}
+
+#contact .contact-title-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-title {
+    font-family: var(--font-family-title);
+    font-size: 4rem;
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+    width: fit-content;
+}
+
+#contact .contact-section-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (max-width: 900px) {
+    #contact {
+        height: 90vh;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+    }
+    .contact-section-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* footer */
+#footer {
+    display: flex;
+    justify-content: space-between;
+    margin: var(--primary-horinzontal-margin);
+    margin-bottom: 20px;
+}
+
+#footer span {
+    font-weight: 200;
+    font-family: var(--font-family-others);
 }
