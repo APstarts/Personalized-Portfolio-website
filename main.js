@@ -47,3 +47,30 @@ navLinks.forEach(link => {
         }
     })
 })
+
+//bottom screen contact cards animation
+const contact_cards = document.querySelectorAll("#contact .contact-card");
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting){
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show')
+        }
+    })
+}, {
+    threshold: 0.2,
+    rootMargin: '0px'
+})
+
+contact_cards.forEach((card, index) => {
+    card.style.setProperty('--delay', `${index * 0.2}s`);
+    observer.observe(card)
+});
+
+//project grid box animation
+const project_grid_boxes = document.querySelectorAll(".project-grid-box");
+project_grid_boxes.forEach((box, index) => {
+    box.style.setProperty('--delay', `${index * 0.2}s`);
+    observer.observe(box);
+})

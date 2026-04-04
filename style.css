@@ -158,7 +158,7 @@ nav ul li:hover {
     }
     .contact-card {
         height: 150px;
-        width: 210px
+        width: 220px
     }
 }
 
@@ -575,9 +575,15 @@ nav ul li:hover {
     padding: 5px 20px;
     background-color: var(--sub-alt-color);
     box-shadow: 0px 0px 2px 0px var(--main-color);
-    transition: all 1s;
+    transition: all 0.5s ease-out;
+    transition-delay: var(--delay, 0s);
+    transform: translateY(50px);
 }
 
+.project-grid-box.show {
+    opacity:1;
+    transform: translateY(0);
+}
 .project-grid-box a {
     text-decoration: none;
     color: var(--text-color);
@@ -666,6 +672,18 @@ nav ul li:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+#contact .contact-title-container .contact-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+    transition-delay: var(--delay,0s);
+}
+
+#contact .contact-title-container .show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .contact-title {
