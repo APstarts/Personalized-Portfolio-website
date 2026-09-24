@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anurag Pal | Developer</title>
+    <title>Anurag Pal | Chartered Accountant & Software Engineer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/0085da609c.js" crossorigin="anonymous"></script>
 </head>
@@ -16,35 +17,46 @@
     <nav>
         <ul class="nav-ul-container">
             <li><a href="#hero" class="nav-link">Home</a></li>
-            <!-- <li>About</li> -->
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <!-- <li>Tech Stack</li>
-            <li>Contact</li> -->
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#solutions" class="nav-link">Case Studies</a></li>
+            <li><a href="#projects" class="nav-link">Open Source</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
     </nav>
-    <!-- Popup model -->
-     <div class="Popup hidden">
+
+    <!-- Popup modal -->
+    <div class="Popup hidden">
         <p>Connect with me!</p>
         <div class="contact-container">
-            <p class="closeButton">x</p>
+            <p class="closeButton">×</p>
             <div class="contact-card">
                 <a href="https://www.linkedin.com/in/anuragpal27" target="_blank" rel="noopener noreferrer">
                     <i class="fa fa-linkedin" style="font-size:36px"></i>
                 </a>
-                LinkedIn
+                <span>LinkedIn</span>
             </div>
             <div class="contact-card">
-                <a href="mailto:connect.anuragpal@outlook.com", target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope" style="font-size:36px"></i>
-                    </a>
-                    connect.anuragpal.outlook.com
-                </div>
+                <a href="mailto:connect.anuragpal@outlook.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-envelope" style="font-size:36px"></i>
+                </a>
+                <span>connect.anuragpal@outlook.com</span>
+            </div>
             <div class="contact-card">
-                <a href="https://www.github.com/apstarts", target="_blank", rel="noopener noreferrer">
-                <i class="fa fa-github" style="font-size:36px"></i></a>
-                Github
+                <a href="https://github.com/apstarts" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-github" style="font-size:36px"></i>
+                </a>
+                <span>GitHub</span>
+            </div>
+            <div class="contact-card">
+                <a href="https://x.com/CA_Anurag_Pal" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-x-twitter" style="font-size:36px"></i>
+                </a>
+                <span>Twitter / X</span>
             </div>
         </div>
-     </div>
+    </div>
+
     <!-- Hero Section -->
     <section id="hero" class="bg-grid">
         <div class="hero-main-container">
@@ -53,144 +65,417 @@
                     <div class="hero-tag-dot"></div>
                     <p>Available for opportunities</p>
                 </div>
-                <!-- <p class="before-developer-name">I'M</p> -->
                 <p class="developer-name">ANURAG PAL</p>
                 <p class="typewriter-text"></p>
-                <p class="hero-description">Developing solutions, and crafting experiences that help businesses operate efficiently and grow optimally.</p>
-                <button class="contact-button">Contact Me</button>
+                <p class="hero-description">Chartered Accountant & Software Engineer bridging financial domain acumen with systems programming in Rust, private local AI agent runtimes, automated reconciliation pipelines, and full-stack web & mobile apps.</p>
+                <div class="hero-cta-buttons">
+                    <button class="contact-button">Contact Me</button>
+                    <a href="https://github.com/apstarts" target="_blank" rel="noopener noreferrer" class="hero-github-btn">
+                        <i class="fa-brands fa-github"></i> GitHub Profile
+                    </a>
+                </div>
             </div>
             <div class="hero-sub-container-2"></div>
         </div>
         <div class="image-container">
-            <img src="public/hero_image5.png" alt="hero-image">
+            <img src="public/hero_image5.png" alt="Anurag Pal - Chartered Accountant & Software Engineer">
         </div>
-        <!-- <div class="circle-1"></div>
-        <div class="circle-2"></div>
-        <div class="circle-3"></div>
-        <div class="circle-4"></div>
-        <div class="circle-5"></div> -->
     </section>
+
     <!-- About Section -->
     <section id="about">
         <div class="about-container">
             <div class="about-container-1">
                 <p class="about-title">About Me</p>
-                <div>
-                    I'm Anurag Pal, a Chartered Accountant and full stack developer.
-                    I've been developing full stack solutions for my clients for 1+ years.
-                    I invest my time in obtaining process understanding of what my client's intend to achieve and help them with suitable softwares that serves their requirements.
-                    I've also been providing data analysis and custom RAG based chatbot development services to my clients using my skills in natural language processing and large language models.
-                    I bring in the rare blend of expertise in code and financials. My background combination allows me to obtain full understanding of client's business requirements and provide the best possible solution.
+                <div class="about-text-content">
+                    <p>I am a <strong>Chartered Accountant</strong> with an enduring passion for serious systems programming, AI engineering, and full-stack software development.</p>
+                    <p>My engineering journey began on the audit floor. Frustrated by traditional, high-risk sampling methods, I built custom automated tools—including **3-way inventory & purchase reconcilers**, **WMS dispatch vs. stock ledger checkers**, **creditor aging pipelines**, and **TDS tax compliance validators**—enabling 100% data verification across millions in transactions.</p>
+                    <p>Driven by what code and mathematics can achieve, I expanded into deep learning and natural language processing, constructing **GPT-style Transformers** and **Byte-Pair Encoding (BPE) tokenizers from first principles**, as well as **private local LLM extraction pipelines with JSON schema enforcement** for earnings calls.</p>
+                    <p>Today, I specialize in **systems programming in Rust**—engineering high-performance autonomous agent runtimes with dynamic planning and semantic context compaction, native desktop apps with Slint, and cross-platform web & mobile systems.</p>
+                    <p>I bring a rare convergence of **rigorous financial & domain understanding** and **low-level systems & AI engineering**, crafting robust, deterministic software for mission-critical operations.</p>
                 </div> 
             </div>
-            <div class="about-container-2">
-                <div class="grid-container">
-                    <div class="grid-box s1">
-                        <div>HTML / CSS / Tailwind CSS</div>
-                        <div class="skill-rating">90%</div>
-                        <div class="skill-bar">
-                            <div class="skills-inner-bar"></div>
-                        </div>
-                    </div>
-                    <div class="grid-box s2">
-                        <div>Javascript</div>
-                        <div class="skill-rating">85%</div>
-                        <div class="skill-bar">
-                            <div class="skills-inner-bar"></div>
-                        </div>
-                    </div>
-                    <div class="grid-box s3">
-                        <div>React / React Native / Next JS</div>
-                        <div class="skill-rating">90%</div>
-                        <div class="skill-bar">
-                            <div class="skills-inner-bar"></div>
-                        </div>
-                    </div>
-                    <div class="grid-box s4">
-                        <div>Python</div>
-                        <div class="skill-rating">95%</div>
-                        <div class="skill-bar">
-                            <div class="skills-inner-bar"></div>
-                        </div>
-                    </div>
-                    <div class="grid-box s5">
-                        <div>SQL</div>
-                        <div class="skill-rating">92%</div>
-                        <div class="skill-bar">
-                            <div class="skills-inner-bar"></div>
-                        </div>
-                    </div>
-                    <div class="grid-box s5">
-                        <div>ML / DL</div>
-                        <div class="skill-rating">87%</div>
-                        <div class="skill-bar">
-                            <div class="skills-inner-bar"></div>
-                        </div>
-                    </div>
+        </div>
+    </section>
+
+    <!-- Services / Solutions Pillars Section -->
+    <section id="services">
+        <div class="Section-title-holder">
+            <i class="fa-solid fa-cube"></i>
+            <p class="Section-title">What I Deliver</p>
+        </div>
+        <div class="services-grid-container">
+            <div class="service-card">
+                <i class="fa-solid fa-calculator service-icon"></i>
+                <p class="service-card-title">Financial & Audit Automation</p>
+                <p class="service-card-desc">Bespoke reconciliation engines, automated 3-way invoice/GRN/ledger matching, Tally ERP integrations, and tax compliance automation (TDS) that eliminate 100s of manual spreadsheet hours.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-brain service-icon"></i>
+                <p class="service-card-title">Private Local AI & Agent Runtimes</p>
+                <p class="service-card-desc">Self-hosted, on-premise local LLMs (Ollama) and autonomous agent harnesses with strict JSON schema enforcement to parse earnings calls and financial filings with zero cloud data leakage.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-mobile-screen-button service-icon"></i>
+                <p class="service-card-title">Web & Cross-Platform Mobile</p>
+                <p class="service-card-desc">Full-stack server-side rendered (Next.js) web applications and cross-platform mobile apps (React Native Expo) powered by unified TypeScript APIs and robust PostgreSQL databases.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-brands fa-rust service-icon"></i>
+                <p class="service-card-title">High-Performance Native Systems</p>
+                <p class="service-card-desc">Ultra-fast native desktop applications (Rust + Slint UI), high-throughput data processing pipelines, and deterministic CLI developer tooling with minimal memory footprint.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies & Production Solutions Section -->
+    <section id="solutions">
+        <div class="Section-title-holder">
+            <i class="fa-solid fa-briefcase"></i>
+            <p class="Section-title">Case Studies & Production Solutions</p>
+        </div>
+        <div class="projects-grid-container">
+            <!-- Case Study 1 -->
+            <div class="project-grid-box">
+                <div class="project-top-bar">
+                    <i class="fa-solid fa-boxes-stacked project-card-icon"></i>
+                    <span class="production-badge">Production Engine</span>
+                </div>
+                <p class="project-grid-box-title">3-Way Inventory & GRN Reconciler</p>
+                <p class="project-grid-box-desc">Automated matching pipeline cross-verifying ERP purchase registers, warehouse Goods Receipt Notes (GRN), and physical stock ledgers. Detects rate discrepancies, unrecorded liabilities, and inventory shrinkage automatically.</p>
+                <div class="project-tags">
+                    <span>Node.js</span>
+                    <span>Python</span>
+                    <span>WMS Integration</span>
+                    <span>Internal Controls</span>
+                    <span>Variance Analysis</span>
+                </div>
+            </div>
+
+            <!-- Case Study 2 -->
+            <div class="project-grid-box">
+                <div class="project-top-bar">
+                    <i class="fa-solid fa-file-invoice-dollar project-card-icon"></i>
+                    <span class="production-badge">Privacy-Safe AI</span>
+                </div>
+                <p class="project-grid-box-title">Private Local LLM Financial Intelligence</p>
+                <p class="project-grid-box-desc">On-premise financial extraction pipeline running local SLMs (Llama 3 / Qwen via Ollama) with strict JSON schema constraints to extract metrics, guidance, and risks from earnings call transcript PDFs without cloud API costs or data leakage.</p>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Ollama</span>
+                    <span>Local LLMs</span>
+                    <span>JSON Schema</span>
+                    <span>Financial Analytics</span>
+                </div>
+            </div>
+
+            <!-- Case Study 3 -->
+            <div class="project-grid-box">
+                <div class="project-top-bar">
+                    <i class="fa-solid fa-file-shield project-card-icon"></i>
+                    <span class="production-badge">Compliance Pipeline</span>
+                </div>
+                <p class="project-grid-box-title">Creditor Audit & TDS Compliance Suite</p>
+                <p class="project-grid-box-desc">Automated batch verification tool for vendor ledger aging, statement confirmations, and Indian Tax Deducted at Source (TDS) rate validation, flagging statutory non-compliance and unbilled liabilities before annual closing.</p>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Tax Auditing</span>
+                    <span>TDS Compliance</span>
+                    <span>Tally ERP / TDL</span>
+                    <span>Automation</span>
+                </div>
+            </div>
+
+            <!-- Case Study 4 -->
+            <div class="project-grid-box">
+                <div class="project-top-bar">
+                    <i class="fa-solid fa-laptop-code project-card-icon"></i>
+                    <span class="production-badge">Dual-Stack App</span>
+                </div>
+                <p class="project-grid-box-title">Unified Web & Mobile Goal Ecosystem</p>
+                <p class="project-grid-box-desc">Production-grade productivity platform featuring a Next.js SSR web application and a synchronized React Native Expo mobile app, sharing a unified TypeScript backend and authentication architecture.</p>
+                <div class="project-tags">
+                    <span>Next.js</span>
+                    <span>React Native Expo</span>
+                    <span>TypeScript</span>
+                    <span>REST APIs</span>
+                    <span>PostgreSQL</span>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Projects Section -->
+
+    <!-- Open Source Projects Section -->
     <section id="projects">
         <div class="Projects-title-holder">
             <i class="fa-solid fa-diagram-project"></i>
-            <p class="Projects-title">Projects</p>
+            <p class="Projects-title">Featured Open Source Projects</p>
         </div>
         <div class="projects-grid-container">
+            <!-- Project 1: Autonomous Rust Agent Runtime -->
             <div class="project-grid-box">
-                <i class="fa-solid fa-martini-glass-citrus"></i>
-                <a href="https://gsap-cocktails-puce.vercel.app/", target="_blank", rel="noopener noreferrer"><p class="project-grid-box-title">Interactive Mocktail Ui</p></a>
-                <p class="project-grid-box-desc">A frontend showcase utilizing the modern layout architectures and state management for dynamic content delivery using React and GSAP</p>
+                <div class="project-top-bar">
+                    <i class="fa-brands fa-rust project-card-icon"></i>
+                    <div class="project-card-links">
+                        <a href="https://github.com/APstarts/Custom-Agent-Harness-for-local-coding-agent" target="_blank" rel="noopener noreferrer" title="View Source on GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <a href="https://github.com/APstarts/Custom-Agent-Harness-for-local-coding-agent" target="_blank" rel="noopener noreferrer">
+                    <p class="project-grid-box-title">Autonomous Rust Agent Runtime</p>
+                </a>
+                <p class="project-grid-box-desc">High-performance local AI agent runtime engineered in Rust with Tokio. Features 3-phase orchestration (Plan, Execute, Synthesize), proactive token compaction (reducing 14+ messages to 5), reasoning fallback for local SLMs (Qwen/DeepSeek), and sandboxed execution.</p>
+                <div class="project-tags">
+                    <span>Rust</span>
+                    <span>Tokio</span>
+                    <span>Async</span>
+                    <span>Ollama / Local LLMs</span>
+                    <span>Agentic AI</span>
+                </div>
             </div>
+
+            <!-- Project 2: GPT from Scratch -->
             <div class="project-grid-box">
-                <i class="fa-regular fa-newspaper"></i>
-                <a href="https://nextjs-blog-6b9zwwb77-apstarts-projects.vercel.app", target="_blank", rel="noopener noreferrer"><p class="project-grid-box-title">Next JS Blog Platform</p></a>
-                <p class="project-grid-box-desc">Server-side rendered (SSR) content platform for Core Web Vitals, SEO, and fast page loads</p>
+                <div class="project-top-bar">
+                    <i class="fa-solid fa-brain project-card-icon"></i>
+                    <div class="project-card-links">
+                        <a href="https://github.com/APstarts/learning-to-build-nano-GPT" target="_blank" rel="noopener noreferrer" title="View Source on GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <a href="https://github.com/APstarts/learning-to-build-nano-GPT" target="_blank" rel="noopener noreferrer">
+                    <p class="project-grid-box-title">Nano-GPT Transformer from Scratch</p>
+                </a>
+                <p class="project-grid-box-desc">Complete ground-up implementation of a decoder-only GPT Transformer architecture in PyTorch. Implements multi-head causal self-attention, residual connections, layer normalization, position embeddings, and autoregressive text generation.</p>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>PyTorch</span>
+                    <span>Transformers</span>
+                    <span>Deep Learning</span>
+                    <span>NLP</span>
+                </div>
             </div>
+
+            <!-- Project 3: Byte-Pair Encoding Tokenizer -->
             <div class="project-grid-box">
-                <i class="fa-solid fa-dumbbell"></i>
-                <a href="https://apstarts.github.io/the-gym/", target="_blank", rel="noopener noreferrer"><p class="project-grid-box-title">Gym Lead-Gen Landing Page</p></a>
-                <p class="project-grid-box-desc">A conversion focused, fully responsive  landing page interface engineered for the fitness industry.</p>
+                <div class="project-top-bar">
+                    <i class="fa-solid fa-code project-card-icon"></i>
+                    <div class="project-card-links">
+                        <a href="https://github.com/APstarts/Byte-Pair-Encoding-built-from-scratch-" target="_blank" rel="noopener noreferrer" title="View Source on GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <a href="https://github.com/APstarts/Byte-Pair-Encoding-built-from-scratch-" target="_blank" rel="noopener noreferrer">
+                    <p class="project-grid-box-title">Byte-Pair Encoding Tokenizer</p>
+                </a>
+                <p class="project-grid-box-desc">Custom BPE tokenizer built from scratch in Python following first principles. Implements byte-level vocabulary training, pair frequency extraction, merge rule persistence, and optimized encoding & decoding pipelines for LLMs.</p>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Tokenization</span>
+                    <span>BPE</span>
+                    <span>LLM Foundations</span>
+                </div>
             </div>
+
+            <!-- Project 4: Risk-Based Audit Sampling Calculator -->
             <div class="project-grid-box">
-                <i class="fa-solid fa-couch"></i>
-                <a href="https://apstarts.github.io/Portfolio-Project-Furniture/", target="_blank", rel="noopener noreferrer"><p class="project-grid-box-title">Funiture E-Conmnerce UI</p></a>
-                <p class="project-grid-box-desc">Digital storefront prototype featuring resonsive product grids and modern layout conventions.</p>
+                <div class="project-top-bar">
+                    <i class="fa-solid fa-calculator project-card-icon"></i>
+                    <div class="project-card-links">
+                        <a href="https://apstarts.github.io/Audit-Sampling-Calculator/" target="_blank" rel="noopener noreferrer" title="Live Tool">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <a href="https://github.com/APstarts/Audit-Sampling-Calculator" target="_blank" rel="noopener noreferrer" title="View Source on GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <a href="https://apstarts.github.io/Audit-Sampling-Calculator/" target="_blank" rel="noopener noreferrer">
+                    <p class="project-grid-box-title">Audit Sampling Risk Calculator</p>
+                </a>
+                <p class="project-grid-box-desc">A specialized financial auditing tool built to calculate statistically sound sample sizes for internal control testing and substantive tests of details based on population size, risk levels, tolerable error, and expected deviations.</p>
+                <div class="project-tags">
+                    <span>JavaScript</span>
+                    <span>Audit Analytics</span>
+                    <span>Internal Controls</span>
+                    <span>FinTech</span>
+                </div>
+            </div>
+
+            <!-- Project 5: Native Desktop Todo App -->
+            <div class="project-grid-box">
+                <div class="project-top-bar">
+                    <i class="fa-solid fa-desktop project-card-icon"></i>
+                    <div class="project-card-links">
+                        <a href="https://github.com/APstarts/Native-Desktop-Todo-App" target="_blank" rel="noopener noreferrer" title="View Source on GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <a href="https://github.com/APstarts/Native-Desktop-Todo-App" target="_blank" rel="noopener noreferrer">
+                    <p class="project-grid-box-title">Native Desktop GUI Application</p>
+                </a>
+                <p class="project-grid-box-desc">High-performance cross-platform native desktop productivity app engineered with Rust and the Slint UI declarative GUI framework. Features zero-overhead memory footprint, fluid animations, and local persistence.</p>
+                <div class="project-tags">
+                    <span>Rust</span>
+                    <span>Slint UI</span>
+                    <span>Desktop GUI</span>
+                    <span>Systems</span>
+                </div>
+            </div>
+
+            <!-- Project 6: Next.js SSR Blog Platform -->
+            <div class="project-grid-box">
+                <div class="project-top-bar">
+                    <i class="fa-regular fa-newspaper project-card-icon"></i>
+                    <div class="project-card-links">
+                        <a href="https://nextjs-blog-app-sooty.vercel.app" target="_blank" rel="noopener noreferrer" title="Live Demo">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <a href="https://github.com/APstarts/nextjs-blog-app" target="_blank" rel="noopener noreferrer" title="View Source on GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <a href="https://nextjs-blog-app-sooty.vercel.app" target="_blank" rel="noopener noreferrer">
+                    <p class="project-grid-box-title">Next.js SSR Content Platform</p>
+                </a>
+                <p class="project-grid-box-desc">Full-stack server-side rendered (SSR) web application built with Next.js, React, and TypeScript. Optimized for Core Web Vitals, dynamic routing, SEO performance, responsive layouts, and lightning-fast edge delivery.</p>
+                <div class="project-tags">
+                    <span>Next.js</span>
+                    <span>TypeScript</span>
+                    <span>React</span>
+                    <span>Tailwind CSS</span>
+                    <span>Vercel</span>
+                </div>
             </div>
         </div>
     </section>
-    <!-- Tech Stack section
-    <section id="techStack"></section> -->
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="Skills-title-holder">
+            <i class="fa-solid fa-layer-group"></i>
+            <p class="Skills-title">Skills & Expertise</p>
+        </div>
+        <div class="skills-grid-container">
+            <div class="skill-grid-box s1">
+                <div class="skill-header">
+                    <span><i class="fa-brands fa-rust skill-icon"></i> Rust & Systems Programming</span>
+                    <span class="skill-rating">90%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skills-inner-bar" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill-grid-box s2">
+                <div class="skill-header">
+                    <span><i class="fa-brands fa-python skill-icon"></i> Python, PyTorch & Local LLMs</span>
+                    <span class="skill-rating">95%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skills-inner-bar" style="width: 95%;"></div>
+                </div>
+            </div>
+            <div class="skill-grid-box s3">
+                <div class="skill-header">
+                    <span><i class="fa-solid fa-robot skill-icon"></i> Autonomous Agents & Tool Runtime</span>
+                    <span class="skill-rating">92%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skills-inner-bar" style="width: 92%;"></div>
+                </div>
+            </div>
+            <div class="skill-grid-box s4">
+                <div class="skill-header">
+                    <span><i class="fa-brands fa-react skill-icon"></i> React Native & Next.js / TypeScript</span>
+                    <span class="skill-rating">92%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skills-inner-bar" style="width: 92%;"></div>
+                </div>
+            </div>
+            <div class="skill-grid-box s5">
+                <div class="skill-header">
+                    <span><i class="fa-brands fa-node-js skill-icon"></i> Node.js, Express & REST APIs</span>
+                    <span class="skill-rating">88%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skills-inner-bar" style="width: 88%;"></div>
+                </div>
+            </div>
+            <div class="skill-grid-box s6">
+                <div class="skill-header">
+                    <span><i class="fa-solid fa-database skill-icon"></i> PostgreSQL, SQLite & Data Modeling</span>
+                    <span class="skill-rating">90%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skills-inner-bar" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill-grid-box s7">
+                <div class="skill-header">
+                    <span><i class="fa-solid fa-chart-line skill-icon"></i> Financial Auditing & ERP Integration</span>
+                    <span class="skill-rating">95%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skills-inner-bar" style="width: 95%;"></div>
+                </div>
+            </div>
+            <div class="skill-grid-box s8">
+                <div class="skill-header">
+                    <span><i class="fa-brands fa-git-alt skill-icon"></i> Git, Linux & Modern Tooling</span>
+                    <span class="skill-rating">92%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skills-inner-bar" style="width: 92%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact">
         <div class="contact-title-container">
             <span class="contact-title">Let's connect</span>
             <div class="contact-section-container">
-            <div class="contact-card">
-                <a href="https://www.linkedin.com/in/anuragpal27" target="_blank" rel="noopener noreferrer">
-                    <i class="fa fa-linkedin" style="font-size:36px"></i>
-                </a>
-                LinkedIn
-            </div>
-            <div class="contact-card">
-                <a href="mailto:connect.anuragpal@outlook.com", target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope" style="font-size:36px"></i>
+                <div class="contact-card">
+                    <a href="https://www.linkedin.com/in/anuragpal27" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-linkedin" style="font-size:36px"></i>
                     </a>
-                    connect.anuragpal.outlook.com
+                    <span>LinkedIn</span>
                 </div>
-            <div class="contact-card">
-                <a href="https://www.github.com/apstarts", target="_blank", rel="noopener noreferrer">
-                <i class="fa fa-github" style="font-size:36px"></i></a>
-                Github
+                <div class="contact-card">
+                    <a href="mailto:connect.anuragpal@outlook.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-envelope" style="font-size:36px"></i>
+                    </a>
+                    <span>connect.anuragpal@outlook.com</span>
+                </div>
+                <div class="contact-card">
+                    <a href="https://github.com/apstarts" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-github" style="font-size:36px"></i>
+                    </a>
+                    <span>GitHub</span>
+                </div>
+                <div class="contact-card">
+                    <a href="https://x.com/CA_Anurag_Pal" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-x-twitter" style="font-size:36px"></i>
+                    </a>
+                    <span>Twitter / X</span>
+                </div>
             </div>
         </div>
-        </div>
     </section>
-    <!-- footer -->
-    <section id="footer">
-        <span>Location: Remote</span>
-        <span>Developing systems that ease your operations.</span>
-    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <span>Anurag Pal &bull; Chartered Accountant & Software Engineer</span>
+        <span>me.caanuragpal.com</span>
+    </footer>
+
     <script src="main.js"></script>
 </body>
 </html>
